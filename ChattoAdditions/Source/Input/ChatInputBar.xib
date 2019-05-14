@@ -51,8 +51,8 @@
                     <rect key="frame" x="253" y="39" width="94" height="44"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="9km-tD-ZFh"/>
-                        <constraint firstAttribute="width" constant="30" id="JeX-ov-P8o"/>
+                        <constraint firstAttribute="height" constant="34" id="9km-tD-ZFh"/>
+                        <constraint firstAttribute="width" constant="34" id="JeX-ov-P8o"/>
                     </constraints>
                     <state key="normal" image="send"/>
                     <connections>
@@ -87,7 +87,7 @@
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" id="g47-V6-meR"/>
                 <constraint firstItem="hE9-hU-Ci1" firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="-17" id="l55-Tg-O6a"/>
                 <constraint firstItem="Xjl-JH-vmF" firstAttribute="leading" secondItem="Vlk-9J-bj7" secondAttribute="leading" constant="10" id="sgF-iW-TPI"/>
-                <constraint firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="10" id="vVY-rg-Rwc"/>
+                <constraint firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" id="vVY-rg-Rwc"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
