@@ -116,6 +116,9 @@
 		CDC6100B1FD8268200C2588E /* FakePhotosInputDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC610091FD8267D00C2588E /* FakePhotosInputDataProvider.swift */; };
 		CDC6100D1FD8376000C2588E /* PhotosInputCellProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6100C1FD8376000C2588E /* PhotosInputCellProviderTests.swift */; };
 		CDE15F43205993FB005D86DD /* PhotosInputCameraPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE15F42205993FB005D86DD /* PhotosInputCameraPickerTests.swift */; };
+		CE462728228B471500DE665E /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462725228B471400DE665E /* send@2x.png */; };
+		CE462729228B471500DE665E /* attach@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462726228B471400DE665E /* attach@2x.png */; };
+		CE46272A228B471500DE665E /* gif@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462727228B471400DE665E /* gif@2x.png */; };
 		DE51010D21B5670A009BC61C /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51010C21B5670A009BC61C /* InputContainerView.swift */; };
 		F6D04BA71CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04BA61CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift */; };
 		F6D04BA91CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04BA81CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift */; };
@@ -244,6 +247,9 @@
 		CDC610091FD8267D00C2588E /* FakePhotosInputDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePhotosInputDataProvider.swift; sourceTree = "<group>"; };
 		CDC6100C1FD8376000C2588E /* PhotosInputCellProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosInputCellProviderTests.swift; sourceTree = "<group>"; };
 		CDE15F42205993FB005D86DD /* PhotosInputCameraPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosInputCameraPickerTests.swift; sourceTree = "<group>"; };
+		CE462725228B471400DE665E /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send@2x.png"; sourceTree = "<group>"; };
+		CE462726228B471400DE665E /* attach@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attach@2x.png"; sourceTree = "<group>"; };
+		CE462727228B471400DE665E /* gif@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gif@2x.png"; sourceTree = "<group>"; };
 		DE51010C21B5670A009BC61C /* InputContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		F6D04BA61CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInputPlaceholderDataProviderTests.swift; sourceTree = "<group>"; };
 		F6D04BA81CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInputWithPlaceholdersDataProviderTests.swift; sourceTree = "<group>"; };
@@ -376,6 +382,9 @@
 		C3C0CBD21BFE496A0052747C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CE462726228B471400DE665E /* attach@2x.png */,
+				CE462727228B471400DE665E /* gif@2x.png */,
+				CE462725228B471400DE665E /* send@2x.png */,
 				C3C0CC961BFE4A2A0052747C /* ChattoAdditions.h */,
 				C3C0CC021BFE496A0052747C /* Info.plist */,
 				55ABA5521FC738E300923302 /* Common */,
@@ -701,6 +710,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C3C0CBAE1BFE49320052747C;
@@ -719,12 +729,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE462728228B471500DE665E /* send@2x.png in Resources */,
 				C3C0CC6C1BFE496A0052747C /* CircleProgressIndicator.xcassets in Resources */,
 				C3C0CC581BFE496A0052747C /* Photos.xcassets in Resources */,
 				C3C0CC2D1BFE496A0052747C /* BaseMessageAssets.xcassets in Resources */,
 				C3C0CC611BFE496A0052747C /* Text.xcassets in Resources */,
+				CE46272A228B471500DE665E /* gif@2x.png in Resources */,
 				C3C0CC501BFE496A0052747C /* ChatInputBar.xib in Resources */,
 				C3C0CC391BFE496A0052747C /* PhotoMessageAssets.xcassets in Resources */,
+				CE462729228B471500DE665E /* attach@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

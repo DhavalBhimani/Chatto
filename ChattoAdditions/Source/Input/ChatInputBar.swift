@@ -85,20 +85,20 @@ open class ChatInputBar: ReusableXibView {
     }
 
     open override func updateConstraints() {
-        if self.showsTextView {
-            NSLayoutConstraint.activate(self.constraintsForVisibleTextView)
-            NSLayoutConstraint.deactivate(self.constraintsForHiddenTextView)
-        } else {
-            NSLayoutConstraint.deactivate(self.constraintsForVisibleTextView)
-            NSLayoutConstraint.activate(self.constraintsForHiddenTextView)
-        }
-        if self.showsSendButton {
-            NSLayoutConstraint.deactivate(self.constraintsForHiddenSendButton)
-            NSLayoutConstraint.activate(self.constraintsForVisibleSendButton)
-        } else {
-            NSLayoutConstraint.deactivate(self.constraintsForVisibleSendButton)
-            NSLayoutConstraint.activate(self.constraintsForHiddenSendButton)
-        }
+//        if self.showsTextView {
+//            NSLayoutConstraint.activate(self.constraintsForVisibleTextView)
+//            NSLayoutConstraint.deactivate(self.constraintsForHiddenTextView)
+//        } else {
+//            NSLayoutConstraint.deactivate(self.constraintsForVisibleTextView)
+//            NSLayoutConstraint.activate(self.constraintsForHiddenTextView)
+//        }
+//        if self.showsSendButton {
+//            NSLayoutConstraint.deactivate(self.constraintsForHiddenSendButton)
+//            NSLayoutConstraint.activate(self.constraintsForVisibleSendButton)
+//        } else {
+//            NSLayoutConstraint.deactivate(self.constraintsForVisibleSendButton)
+//            NSLayoutConstraint.activate(self.constraintsForHiddenSendButton)
+//        }
         super.updateConstraints()
     }
 
