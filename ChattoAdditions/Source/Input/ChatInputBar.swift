@@ -235,13 +235,13 @@ extension ChatInputBar {
         self.textView.accessibilityIdentifier = appearance.textInputAppearance.accessibilityIdentifier
         self.tabBarInterItemSpacing = appearance.tabBarAppearance.interItemSpacing
         self.tabBarContentInsets = appearance.tabBarAppearance.contentInsets
-        self.sendButton.contentEdgeInsets = appearance.sendButtonAppearance.insets
-        //self.sendButton.setTitle(appearance.sendButtonAppearance.title, for: .normal)
-        appearance.sendButtonAppearance.titleColors.forEach { (state, color) in
-            self.sendButton.setTitleColor(color, for: state.controlState)
-        }
-        self.sendButton.titleLabel?.font = appearance.sendButtonAppearance.font
-        self.sendButton.accessibilityIdentifier = appearance.sendButtonAppearance.accessibilityIdentifier
+//        self.sendButton.contentEdgeInsets = appearance.sendButtonAppearance.insets
+//        //self.sendButton.setTitle(appearance.sendButtonAppearance.title, for: .normal)
+//        appearance.sendButtonAppearance.titleColors.forEach { (state, color) in
+//            self.sendButton.setTitleColor(color, for: state.controlState)
+//        }
+//        self.sendButton.titleLabel?.font = appearance.sendButtonAppearance.font
+//        self.sendButton.accessibilityIdentifier = appearance.sendButtonAppearance.accessibilityIdentifier
         self.tabBarContainerHeightConstraint.constant = appearance.tabBarAppearance.height
     }
 }
