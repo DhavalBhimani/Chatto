@@ -34,6 +34,8 @@ public protocol ChatInputBarDelegate: class {
     func inputBar(_ inputBar: ChatInputBar, didReceiveFocusOnItem item: ChatInputItemProtocol)
     func inputBarDidShowPlaceholder(_ inputBar: ChatInputBar)
     func inputBarDidHidePlaceholder(_ inputBar: ChatInputBar)
+    func inputBarDidTapGif(_ inputBar: ChatInputBar)
+    func inputBarDidTapAttach(_ inputBar: ChatInputBar)
 }
 
 @objc
@@ -76,7 +78,7 @@ open class ChatInputBar: ReusableXibView {
 
     open override func awakeFromNib() {
         super.awakeFromNib()
-        self.topBorderHeightConstraint.constant = 1 / UIScreen.main.scale
+        //self.topBorderHeightConstraint.constant = 1 / UIScreen.main.scale
         self.textView.scrollsToTop = false
         self.textView.delegate = self
         self.textView.placeholderDelegate = self
@@ -84,6 +86,12 @@ open class ChatInputBar: ReusableXibView {
         self.sendButton.isEnabled = false
     }
 
+    @IBAction func attachTapped(_ sender: Any) {
+        self.delegate?.inputBarDidTapAttach(self)
+    }
+    @IBAction func gifTapped(_ sender: Any) {
+        self.delegate?.inputBarDidTapGif(self)
+    }
     open override func updateConstraints() {
 //        if self.showsTextView {
 //            NSLayoutConstraint.activate(self.constraintsForVisibleTextView)
@@ -228,7 +236,7 @@ extension ChatInputBar {
         self.tabBarInterItemSpacing = appearance.tabBarAppearance.interItemSpacing
         self.tabBarContentInsets = appearance.tabBarAppearance.contentInsets
         self.sendButton.contentEdgeInsets = appearance.sendButtonAppearance.insets
-        self.sendButton.setTitle(appearance.sendButtonAppearance.title, for: .normal)
+        //self.sendButton.setTitle(appearance.sendButtonAppearance.title, for: .normal)
         appearance.sendButtonAppearance.titleColors.forEach { (state, color) in
             self.sendButton.setTitleColor(color, for: state.controlState)
         }

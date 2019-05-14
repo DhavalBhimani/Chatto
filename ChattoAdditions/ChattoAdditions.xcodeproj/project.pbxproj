@@ -119,6 +119,7 @@
 		CE462728228B471500DE665E /* send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462725228B471400DE665E /* send@2x.png */; };
 		CE462729228B471500DE665E /* attach@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462726228B471400DE665E /* attach@2x.png */; };
 		CE46272A228B471500DE665E /* gif@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE462727228B471400DE665E /* gif@2x.png */; };
+		CE46272C228B48D200DE665E /* Input.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE46272B228B48D200DE665E /* Input.xcassets */; };
 		DE51010D21B5670A009BC61C /* InputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51010C21B5670A009BC61C /* InputContainerView.swift */; };
 		F6D04BA71CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04BA61CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift */; };
 		F6D04BA91CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D04BA81CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift */; };
@@ -250,6 +251,7 @@
 		CE462725228B471400DE665E /* send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send@2x.png"; sourceTree = "<group>"; };
 		CE462726228B471400DE665E /* attach@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attach@2x.png"; sourceTree = "<group>"; };
 		CE462727228B471400DE665E /* gif@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gif@2x.png"; sourceTree = "<group>"; };
+		CE46272B228B48D200DE665E /* Input.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Input.xcassets; sourceTree = "<group>"; };
 		DE51010C21B5670A009BC61C /* InputContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputContainerView.swift; sourceTree = "<group>"; };
 		F6D04BA61CA46C0200E803FA /* PhotosInputPlaceholderDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInputPlaceholderDataProviderTests.swift; sourceTree = "<group>"; };
 		F6D04BA81CA46D5000E803FA /* PhotosInputWithPlaceholdersDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInputWithPlaceholdersDataProviderTests.swift; sourceTree = "<group>"; };
@@ -482,6 +484,7 @@
 				C3C0CC041BFE496A0052747C /* ChatInputBar.swift */,
 				C3C0CC051BFE496A0052747C /* ChatInputBar.xib */,
 				C3C0CC061BFE496A0052747C /* ChatInputBarAppearance.swift */,
+				CE46272B228B48D200DE665E /* Input.xcassets */,
 				C3C0CC071BFE496A0052747C /* ChatInputBarPresenter.swift */,
 				C3C0CC081BFE496A0052747C /* ChatInputItem.swift */,
 				C3C0CC091BFE496A0052747C /* ChatInputItemView.swift */,
@@ -735,6 +738,7 @@
 				C3C0CC2D1BFE496A0052747C /* BaseMessageAssets.xcassets in Resources */,
 				C3C0CC611BFE496A0052747C /* Text.xcassets in Resources */,
 				CE46272A228B471500DE665E /* gif@2x.png in Resources */,
+				CE46272C228B48D200DE665E /* Input.xcassets in Resources */,
 				C3C0CC501BFE496A0052747C /* ChatInputBar.xib in Resources */,
 				C3C0CC391BFE496A0052747C /* PhotoMessageAssets.xcassets in Resources */,
 				CE462729228B471500DE665E /* attach@2x.png in Resources */,
