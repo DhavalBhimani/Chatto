@@ -82,7 +82,7 @@ open class ChatInputBar: ReusableXibView {
         self.textView.scrollsToTop = false
         self.textView.delegate = self
         self.textView.placeholderDelegate = self
-        self.scrollView.scrollsToTop = false
+        self.scrollView?.scrollsToTop = false
         self.sendButton.isEnabled = false
     }
 
@@ -149,7 +149,7 @@ open class ChatInputBar: ReusableXibView {
                 inputItemView.delegate = self
                 return inputItemView
             }
-            self.scrollView.addArrangedViews(inputItemViews)
+            self.scrollView?.addArrangedViews(inputItemViews)
         }
     }
 
