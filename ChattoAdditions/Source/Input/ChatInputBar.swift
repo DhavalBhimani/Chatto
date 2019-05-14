@@ -53,7 +53,7 @@ open class ChatInputBar: ReusableXibView {
         return !inputBar.textView.text.isEmpty
     }
 
-    @IBOutlet weak var scrollView: HorizontalStackScrollView!
+    ///@IBOutlet weak var scrollView: HorizontalStackScrollView!
     @IBOutlet weak var textView: ExpandableTextView!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var topBorderHeightConstraint: NSLayoutConstraint!
@@ -82,7 +82,7 @@ open class ChatInputBar: ReusableXibView {
         self.textView.scrollsToTop = false
         self.textView.delegate = self
         self.textView.placeholderDelegate = self
-        self.scrollView.scrollsToTop = false
+        //self.scrollView.scrollsToTop = false
         self.sendButton.isEnabled = false
     }
 
@@ -149,7 +149,7 @@ open class ChatInputBar: ReusableXibView {
                 inputItemView.delegate = self
                 return inputItemView
             }
-            self.scrollView.addArrangedViews(inputItemViews)
+            //self.scrollView.addArrangedViews(inputItemViews)
         }
     }
 
@@ -242,26 +242,26 @@ extension ChatInputBar {
 //        }
 //        self.sendButton.titleLabel?.font = appearance.sendButtonAppearance.font
 //        self.sendButton.accessibilityIdentifier = appearance.sendButtonAppearance.accessibilityIdentifier
-        self.tabBarContainerHeightConstraint.constant = appearance.tabBarAppearance.height
+//        self.tabBarContainerHeightConstraint.constant = appearance.tabBarAppearance.height
     }
 }
 
 extension ChatInputBar { // Tabar
     public var tabBarInterItemSpacing: CGFloat {
         get {
-            return self.scrollView.interItemSpacing
+            return 0
         }
         set {
-            self.scrollView.interItemSpacing = newValue
+            print("")
         }
     }
 
     public var tabBarContentInsets: UIEdgeInsets {
         get {
-            return self.scrollView.contentInset
+            return .zero
         }
         set {
-            self.scrollView.contentInset = newValue
+            print("")
         }
     }
 }
