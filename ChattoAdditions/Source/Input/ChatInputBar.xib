@@ -49,10 +49,10 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-hU-Ci1">
                     <rect key="frame" x="253" y="39" width="94" height="44"/>
-                    <color key="backgroundColor" red="0.90980392160000001" green="0.26274509800000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="9km-tD-ZFh"/>
-                        <constraint firstAttribute="width" constant="60" id="JeX-ov-P8o"/>
+                        <constraint firstAttribute="width" constant="34" id="JeX-ov-P8o"/>
                     </constraints>
                     <state key="normal" backgroundImage="send"/>
                     <connections>
@@ -75,7 +75,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fsh-hH-hKG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="93" id="0hb-TC-77u"/>
-                <constraint firstAttribute="trailing" secondItem="Vlk-9J-bj7" secondAttribute="trailing" id="1Pv-yF-DiP"/>
+                <constraint firstAttribute="trailing" secondItem="Vlk-9J-bj7" secondAttribute="trailing" constant="10" id="1Pv-yF-DiP"/>
                 <constraint firstItem="TZe-8e-tnS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="2M4-FI-jKf"/>
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="leading" secondItem="fsh-hH-hKG" secondAttribute="leading" constant="-40" id="2eX-4F-TOI"/>
                 <constraint firstItem="Xjl-JH-vmF" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="5OB-nP-zV8"/>
