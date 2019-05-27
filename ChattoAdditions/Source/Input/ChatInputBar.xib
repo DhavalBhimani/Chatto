@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vlk-9J-bj7">
-                    <rect key="frame" x="180" y="-3" width="240" height="128"/>
+                    <rect key="frame" x="53" y="10" width="537" height="103"/>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -25,7 +25,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fsh-hH-hKG" userLabel="TextView" customClass="ExpandableTextView" customModule="ChattoAdditions" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                    <rect key="frame" x="93" y="10" width="447" height="103"/>
                     <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -36,7 +36,7 @@
                     </userDefinedRuntimeAttributes>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjl-JH-vmF" userLabel="gif">
-                    <rect key="frame" x="10" y="10" width="46" height="30"/>
+                    <rect key="frame" x="63" y="46.5" width="30" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="9Om-iv-ec7"/>
@@ -48,7 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-hU-Ci1">
-                    <rect key="frame" x="253" y="39" width="94" height="44"/>
+                    <rect key="frame" x="539" y="44.5" width="34" height="34"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="9km-tD-ZFh"/>
@@ -60,7 +60,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-8e-tnS" userLabel="attach">
-                    <rect key="frame" x="11" y="24" width="46" height="30"/>
+                    <rect key="frame" x="11" y="46.5" width="30" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="ltx-6K-oKB"/>
@@ -80,13 +80,13 @@
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="leading" secondItem="fsh-hH-hKG" secondAttribute="leading" constant="-40" id="2eX-4F-TOI"/>
                 <constraint firstItem="Xjl-JH-vmF" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="5OB-nP-zV8"/>
                 <constraint firstItem="TZe-8e-tnS" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="A82-lw-vXp"/>
-                <constraint firstItem="Vlk-9J-bj7" firstAttribute="height" secondItem="fsh-hH-hKG" secondAttribute="height" multiplier="1.4" id="EEt-gj-s31"/>
+                <constraint firstItem="Vlk-9J-bj7" firstAttribute="top" secondItem="fsh-hH-hKG" secondAttribute="top" id="BUP-VF-DXC"/>
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="HNh-fr-DOP"/>
                 <constraint firstItem="hE9-hU-Ci1" firstAttribute="trailing" secondItem="Vlk-9J-bj7" secondAttribute="trailing" constant="-17" id="IW9-FN-GlL"/>
                 <constraint firstAttribute="bottom" secondItem="fsh-hH-hKG" secondAttribute="bottom" constant="10" id="KJo-FS-aK4"/>
                 <constraint firstItem="hE9-hU-Ci1" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="NJt-MV-FvV"/>
+                <constraint firstItem="Vlk-9J-bj7" firstAttribute="bottom" secondItem="fsh-hH-hKG" secondAttribute="bottom" id="YcM-nm-9fu"/>
                 <constraint firstItem="fsh-hH-hKG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ZsI-iu-9nR"/>
-                <constraint firstItem="hE9-hU-Ci1" firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="-17" id="l55-Tg-O6a"/>
                 <constraint firstItem="Xjl-JH-vmF" firstAttribute="leading" secondItem="Vlk-9J-bj7" secondAttribute="leading" constant="10" id="sgF-iW-TPI"/>
                 <constraint firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="60" id="vVY-rg-Rwc"/>
             </constraints>
@@ -101,8 +101,8 @@
         </view>
     </objects>
     <resources>
-        <image name="attach" width="28" height="28"/>
-        <image name="gif" width="28" height="28"/>
-        <image name="send" width="28" height="28"/>
+        <image name="attach" width="56" height="56"/>
+        <image name="gif" width="56" height="56"/>
+        <image name="send" width="56" height="56"/>
     </resources>
 </document>
