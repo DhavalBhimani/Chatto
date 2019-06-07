@@ -122,6 +122,10 @@ open class ChatInputBar: ReusableXibView {
     public func setGifButton(image: UIImage) {
         gifButton.setImage(image, for: .normal)
     }
+    
+    public func setSendButton(hide: Bool) {
+        sendButton.isHidden = hide
+    }
 
     open var showsSendButton: Bool = true {
         didSet {
