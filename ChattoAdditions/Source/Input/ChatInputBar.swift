@@ -118,6 +118,10 @@ open class ChatInputBar: ReusableXibView {
             self.updateIntrinsicContentSizeAnimated()
         }
     }
+    
+    public func setGifButton(image: UIImage) {
+        gifButton.setImage(image, for: .normal)
+    }
 
     open var showsSendButton: Bool = true {
         didSet {
