@@ -247,6 +247,10 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
 
         self.avatarView.bma_rect = layout.avatarViewFrame
         self.selectionIndicator.bma_rect = layout.selectionIndicatorFrame
+        
+        self.avatarView.layer.cornerRadius = self.avatarView.frame.size.width / 2
+        self.avatarView.layer.masksToBounds = true
+
 
         if self.accessoryTimestampView.superview != nil {
             let layoutConstants = baseStyle.layoutConstants(viewModel: messageViewModel)
