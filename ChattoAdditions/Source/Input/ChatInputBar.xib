@@ -94,7 +94,6 @@
             <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="gifButton" destination="Xjl-JH-vmF" id="9dU-4Q-hPx"/>
                 <outlet property="sendButton" destination="hE9-hU-Ci1" id="VFQ-Pb-J37"/>
                 <outlet property="textView" destination="fsh-hH-hKG" id="QMH-G9-ADs"/>
             </connections>
