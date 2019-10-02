@@ -45,8 +45,12 @@ open class ChatInputBar: ReusableXibView {
         get { return self.textView.pasteActionInterceptor }
         set { self.textView.pasteActionInterceptor = newValue }
     }
+<<<<<<< HEAD
     @IBOutlet weak var gifButton: UIButton!
     
+=======
+
+>>>>>>> parent of 604af9c... fix
     public weak var delegate: ChatInputBarDelegate?
     weak var presenter: ChatInputBarPresenter?
 
