@@ -45,7 +45,7 @@ open class ChatInputBar: ReusableXibView {
         get { return self.textView.pasteActionInterceptor }
         set { self.textView.pasteActionInterceptor = newValue }
     }
-    @IBOutlet weak var gifButton: UIButton!
+    @IBOutlet weak var voiceButton: UIButton!
     
     public weak var delegate: ChatInputBarDelegate?
     weak var presenter: ChatInputBarPresenter?
@@ -85,13 +85,11 @@ open class ChatInputBar: ReusableXibView {
         self.textView.placeholderDelegate = self
         self.scrollView?.scrollsToTop = false
         self.sendButton.isEnabled = false
+        self.sendButton.isHidden = true
     }
 
     @IBAction func attachTapped(_ sender: Any) {
         self.delegate?.inputBarDidTapAttach(self)
-    }
-    @IBAction func gifTapped(_ sender: Any) {
-        self.delegate?.inputBarDidTapGif(self)
     }
     open override func updateConstraints() {
 //        if self.showsTextView {
@@ -117,10 +115,6 @@ open class ChatInputBar: ReusableXibView {
             self.setNeedsLayout()
             self.updateIntrinsicContentSizeAnimated()
         }
-    }
-    
-    public func setGifButton(image: UIImage) {
-        gifButton.setImage(image, for: .normal)
     }
     
     public func setSendButton(hide: Bool) {
@@ -202,6 +196,7 @@ open class ChatInputBar: ReusableXibView {
 
     fileprivate func updateSendButton() {
         self.sendButton.isEnabled = self.shouldEnableSendButton(self)
+        self.sendButton.isHidden = !self.shouldEnableSendButton(self)
     }
 
     @IBAction func buttonTapped(_ sender: AnyObject) {
@@ -209,6 +204,9 @@ open class ChatInputBar: ReusableXibView {
         self.delegate?.inputBarSendButtonPressed(self)
     }
 
+    @IBAction func voiceButtonTapped(_ sender: Any) {
+    }
+    
     public func setTextViewPlaceholderAccessibilityIdentifer(_ accessibilityIdentifer: String) {
         self.textView.setTextPlaceholderAccessibilityIdentifier(accessibilityIdentifer)
     }
