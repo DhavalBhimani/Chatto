@@ -65,7 +65,8 @@ open class ChatInputBar: ReusableXibView {
     @IBOutlet var constraintsForVisibleSendButton: [NSLayoutConstraint]!
     @IBOutlet var constraintsForHiddenSendButton: [NSLayoutConstraint]!
     @IBOutlet var tabBarContainerHeightConstraint: NSLayoutConstraint!
-
+    @IBOutlet weak var bgView: UIView!
+    
     class open func loadNib() -> ChatInputBar {
         let view = Bundle(for: self).loadNibNamed(self.nibName(), owner: nil, options: nil)!.first as! ChatInputBar
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -86,6 +87,9 @@ open class ChatInputBar: ReusableXibView {
         self.scrollView?.scrollsToTop = false
         self.sendButton.isEnabled = false
         self.sendButton.isHidden = true
+        bgView.layer.borderWidth = 0.5
+        bgView.layer.borderColor = UIColor.lightGray.cgColor
+        bgView.layer.masksToBounds = true
     }
 
     @IBAction func attachTapped(_ sender: Any) {
