@@ -36,6 +36,9 @@ public protocol ChatInputBarDelegate: class {
     func inputBarDidHidePlaceholder(_ inputBar: ChatInputBar)
     func inputBarDidTapGif(_ inputBar: ChatInputBar)
     func inputBarDidTapAttach(_ inputBar: ChatInputBar)
+    
+    func inputBarDidTapVoiceButton(_ inputBar: ChatInputBar)
+    func inputBarDidTapCancelVoiceButton(_ inputBar: ChatInputBar)
 }
 
 @objc
@@ -46,6 +49,8 @@ open class ChatInputBar: ReusableXibView {
         set { self.textView.pasteActionInterceptor = newValue }
     }
     @IBOutlet weak var voiceButton: UIButton!
+    @IBOutlet weak var viewForVoice: UIView!
+    @IBOutlet weak var voiceTimerLabel: UILabel!
     
     public weak var delegate: ChatInputBarDelegate?
     weak var presenter: ChatInputBarPresenter?
@@ -209,7 +214,13 @@ open class ChatInputBar: ReusableXibView {
     }
 
     @IBAction func voiceButtonTapped(_ sender: Any) {
+        self.delegate?.inputBarDidTapVoiceButton(self)
     }
+    
+    @IBAction func cancelVoice(_ sender: Any) {
+        self.delegate?.inputBarDidTapCancelVoiceButton(self)
+    }
+    
     
     public func setTextViewPlaceholderAccessibilityIdentifer(_ accessibilityIdentifer: String) {
         self.textView.setTextPlaceholderAccessibilityIdentifier(accessibilityIdentifer)

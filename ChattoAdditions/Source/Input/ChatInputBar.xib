@@ -68,6 +68,38 @@
                         <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="9hi-0N-Y5F"/>
                     </connections>
                 </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-wn-cGR">
+                    <rect key="frame" x="0.0" y="0.0" width="515" height="123"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00,0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5X3-T3-UqF">
+                            <rect key="frame" x="20" y="51" width="60" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQI-4D-NWs">
+                            <rect key="frame" x="259.5" y="41.5" width="80" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Zu0-KH-zOC"/>
+                                <constraint firstAttribute="height" constant="40" id="s3E-1U-QsV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelVoice:" destination="iN0-l3-epB" eventType="touchUpInside" id="IWE-jR-2g5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="5X3-T3-UqF" firstAttribute="leading" secondItem="hVT-wn-cGR" secondAttribute="leading" constant="20" id="1gb-4P-IZH"/>
+                        <constraint firstItem="rQI-4D-NWs" firstAttribute="centerY" secondItem="hVT-wn-cGR" secondAttribute="centerY" id="6lS-iL-1cd"/>
+                        <constraint firstItem="5X3-T3-UqF" firstAttribute="centerY" secondItem="hVT-wn-cGR" secondAttribute="centerY" id="V80-U0-GEa"/>
+                        <constraint firstItem="rQI-4D-NWs" firstAttribute="centerX" secondItem="hVT-wn-cGR" secondAttribute="centerX" constant="42" id="xHt-4u-2jT"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -82,12 +114,16 @@
                 <constraint firstAttribute="bottom" secondItem="fsh-hH-hKG" secondAttribute="bottom" constant="10" id="KJo-FS-aK4"/>
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="15" id="LTh-Yv-jsQ"/>
                 <constraint firstItem="hE9-hU-Ci1" firstAttribute="centerY" secondItem="fsh-hH-hKG" secondAttribute="centerY" id="NJt-MV-FvV"/>
+                <constraint firstAttribute="bottom" secondItem="hVT-wn-cGR" secondAttribute="bottom" id="NhN-zu-Zoo"/>
                 <constraint firstItem="hdi-4X-fkC" firstAttribute="centerY" secondItem="hE9-hU-Ci1" secondAttribute="centerY" id="QPo-US-gW5"/>
+                <constraint firstItem="hdi-4X-fkC" firstAttribute="leading" secondItem="hVT-wn-cGR" secondAttribute="trailing" constant="10" id="VEH-rp-j77"/>
                 <constraint firstItem="Vlk-9J-bj7" firstAttribute="bottom" secondItem="fsh-hH-hKG" secondAttribute="bottom" constant="1" id="YcM-nm-9fu"/>
                 <constraint firstItem="fsh-hH-hKG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ZsI-iu-9nR"/>
                 <constraint firstAttribute="trailing" secondItem="hE9-hU-Ci1" secondAttribute="trailing" constant="15" id="bf0-QN-wTh"/>
                 <constraint firstItem="hdi-4X-fkC" firstAttribute="top" secondItem="hE9-hU-Ci1" secondAttribute="top" id="cfx-gv-lzE"/>
                 <constraint firstItem="hdi-4X-fkC" firstAttribute="leading" secondItem="hE9-hU-Ci1" secondAttribute="leading" id="cv6-dJ-J6M"/>
+                <constraint firstItem="hVT-wn-cGR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eMP-Fn-PpE"/>
+                <constraint firstItem="hVT-wn-cGR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kvT-FL-L1U"/>
                 <constraint firstItem="hdi-4X-fkC" firstAttribute="trailing" secondItem="hE9-hU-Ci1" secondAttribute="trailing" id="u4c-mk-XJY"/>
                 <constraint firstAttribute="trailing" secondItem="fsh-hH-hKG" secondAttribute="trailing" constant="100" id="vVY-rg-Rwc"/>
             </constraints>
@@ -98,9 +134,11 @@
                 <outlet property="bgView" destination="Vlk-9J-bj7" id="Fj4-6M-cz6"/>
                 <outlet property="sendButton" destination="hE9-hU-Ci1" id="VFQ-Pb-J37"/>
                 <outlet property="textView" destination="fsh-hH-hKG" id="QMH-G9-ADs"/>
+                <outlet property="viewForVoice" destination="hVT-wn-cGR" id="n27-Md-pb6"/>
                 <outlet property="voiceButton" destination="hdi-4X-fkC" id="NUB-M5-Goh"/>
+                <outlet property="voiceTimerLabel" destination="5X3-T3-UqF" id="kkM-Q0-bsR"/>
             </connections>
-            <point key="canvasLocation" x="-341" y="68.5"/>
+            <point key="canvasLocation" x="-342.02898550724638" y="67.96875"/>
         </view>
     </objects>
     <resources>
