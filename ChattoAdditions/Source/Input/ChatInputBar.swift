@@ -48,9 +48,9 @@ open class ChatInputBar: ReusableXibView {
         get { return self.textView.pasteActionInterceptor }
         set { self.textView.pasteActionInterceptor = newValue }
     }
-    public @IBOutlet weak var voiceButton: UIButton!
-    public @IBOutlet weak var viewForVoice: UIView!
-    public @IBOutlet weak var voiceTimerLabel: UILabel!
+    @IBOutlet public weak var voiceButton: UIButton!
+    @IBOutlet public weak var viewForVoice: UIView!
+    @IBOutlet public weak var voiceTimerLabel: UILabel!
     
     public weak var delegate: ChatInputBarDelegate?
     weak var presenter: ChatInputBarPresenter?
