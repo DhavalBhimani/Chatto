@@ -34,7 +34,6 @@ public protocol ChatInputBarDelegate: class {
     func inputBar(_ inputBar: ChatInputBar, didReceiveFocusOnItem item: ChatInputItemProtocol)
     func inputBarDidShowPlaceholder(_ inputBar: ChatInputBar)
     func inputBarDidHidePlaceholder(_ inputBar: ChatInputBar)
-    func inputBarDidTapGif(_ inputBar: ChatInputBar)
     func inputBarDidTapAttach(_ inputBar: ChatInputBar)
 }
 
@@ -45,7 +44,6 @@ open class ChatInputBar: ReusableXibView {
         get { return self.textView.pasteActionInterceptor }
         set { self.textView.pasteActionInterceptor = newValue }
     }
-    @IBOutlet weak var gifButton: UIButton!
     
     public weak var delegate: ChatInputBarDelegate?
     weak var presenter: ChatInputBarPresenter?
@@ -90,9 +88,6 @@ open class ChatInputBar: ReusableXibView {
     @IBAction func attachTapped(_ sender: Any) {
         self.delegate?.inputBarDidTapAttach(self)
     }
-    @IBAction func gifTapped(_ sender: Any) {
-        self.delegate?.inputBarDidTapGif(self)
-    }
     open override func updateConstraints() {
 //        if self.showsTextView {
 //            NSLayoutConstraint.activate(self.constraintsForVisibleTextView)
@@ -117,10 +112,6 @@ open class ChatInputBar: ReusableXibView {
             self.setNeedsLayout()
             self.updateIntrinsicContentSizeAnimated()
         }
-    }
-    
-    public func setGifButton(image: UIImage) {
-        gifButton.setImage(image, for: .normal)
     }
     
     public func setSendButton(hide: Bool) {
