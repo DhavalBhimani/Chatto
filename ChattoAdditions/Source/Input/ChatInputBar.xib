@@ -40,9 +40,9 @@
                         <constraint firstAttribute="height" constant="34" id="9km-tD-ZFh"/>
                         <constraint firstAttribute="width" constant="34" id="JeX-ov-P8o"/>
                     </constraints>
-                    <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    <state key="normal" backgroundImage="send"/>
+                    <state key="normal" image="send">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </state>
                     <connections>
                         <action selector="buttonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="9hi-0N-Y5F"/>
                     </connections>
