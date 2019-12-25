@@ -83,6 +83,13 @@ open class ChatInputBar: ReusableXibView {
         self.textView.placeholderDelegate = self
         self.scrollView?.scrollsToTop = false
         self.sendButton.isEnabled = false
+        
+        self.layer.borderColor = UIColor.init(red: 91.0/225, green: 91.0/255, blue: 91.0/255, alpha: 0.2).cgColor
+        self.layer.borderWidth = 0.2
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = .zero
+        self.layer.shadowRadius = 2
     }
 
     @IBAction func attachTapped(_ sender: Any) {
