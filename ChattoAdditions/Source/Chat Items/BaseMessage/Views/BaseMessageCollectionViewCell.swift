@@ -164,6 +164,7 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
 
     private func commonInit() {
         self.avatarView = self.createAvatarView()
+        self.avatarView.contentMode = .scaleAspectFit
         self.avatarView.addGestureRecognizer(self.avatarTapGestureRecognizer)
         self.bubbleView = self.createBubbleView()
         self.bubbleView.isExclusiveTouch = true
@@ -231,7 +232,7 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
 
         let avatarImageSize = style.avatarSize(viewModel: viewModel)
         if avatarImageSize != .zero {
-            self.avatarView.image = viewModel.avatarImage.value
+            self.avatarView.image = image?.cropToBounds(width: 40, height: 40).imageWithSize(size: CGSize(width: 40, height: 40))
         }
     }
 
@@ -250,7 +251,7 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
         
         self.avatarView.layer.cornerRadius = self.avatarView.frame.size.width / 2
         self.avatarView.layer.masksToBounds = true
-
+        self.avatarView.contentMode = .scaleAspectFit
 
         if self.accessoryTimestampView.superview != nil {
             let layoutConstants = baseStyle.layoutConstants(viewModel: messageViewModel)
