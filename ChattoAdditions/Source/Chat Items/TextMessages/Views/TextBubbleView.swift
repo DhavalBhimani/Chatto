@@ -280,7 +280,7 @@ private final class ChatMessageTextView: UITextView {
     }
 
     // See https://github.com/badoo/Chatto/issues/363
-    override var gestureRecognizers: [UIGestureRecognizer]? {
+   /* override var gestureRecognizers: [UIGestureRecognizer]? {
         set {
             super.gestureRecognizers = newValue
         }
@@ -289,7 +289,7 @@ private final class ChatMessageTextView: UITextView {
                 return type(of: gestureRecognizer) == UILongPressGestureRecognizer.self && gestureRecognizer.delaysTouchesEnded
             })
         }
-    }
+    }*/
 
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         return false
